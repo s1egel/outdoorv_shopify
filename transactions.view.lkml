@@ -1,5 +1,5 @@
 view: transactions {
-  sql_table_name: shopify.transactions ;;
+  sql_table_name: shopify_raw.transactions ;;
 
   dimension: receipt__parent_transaction_id {
     primary_key: yes

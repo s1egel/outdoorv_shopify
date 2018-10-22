@@ -1,5 +1,5 @@
 view: checkouts {
-  sql_table_name: shopify.checkouts ;;
+  sql_table_name: shopify_raw.checkouts ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: orders {
-  sql_table_name: shopify.orders ;;
+  sql_table_name: shopify_raw.orders ;;
 
   dimension: id {
     primary_key: yes
@@ -743,7 +743,7 @@ view: customer_order_facts {
           , MAX(created_at) as latest_order_created
           , MIN(created_at) as first_order_created
           , COUNT(DISTINCT DATE_TRUNC('month', created_at)) AS number_of_distinct_months_with_orders
-         FROM shopify.orders
+         FROM shopify_raw.orders
          GROUP BY customer_id
 
  ;;
