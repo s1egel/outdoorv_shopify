@@ -6,6 +6,11 @@ view: customers {
     hidden: yes
     type: number
     sql: ${TABLE}.id ;;
+    link: {
+      label: "Customer Lookup Dashboard"
+      url: "/dashboards/3?customer_id={{ value }}"
+      icon_url: "http://www.looker.com/favicon.ico"
+    }
   }
 
   dimension: _id {
